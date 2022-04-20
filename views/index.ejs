@@ -1,0 +1,13 @@
+<%- include('header') %>
+    <div class="logo">
+        <a href="/" class="logo">
+            <img src="/images/logotype.jpg" alt="ConvertMyMoney" width="375" height="57">
+        </a>
+    </div>
+
+    <form method="GET" action="/convert">
+        <input type="text" name="dolarQuote" id="dolarQuote" placeholder="Dollar quotation" required>
+        <input type="number" name="dolarQuant" id="dolarQuant" placeholder="Quantity" required>
+        <button>Convert!</button>
+    </form>
+    <%- include('footer') %>
